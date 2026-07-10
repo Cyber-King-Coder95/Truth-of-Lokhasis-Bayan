@@ -1,0 +1,1 @@
+alert("This website is created to present the truth about Lokhasis Bayan. Before forming any opinion, please read the disclaimer and explore the website carefully. Here, you will find information and evidence related to Lokhasis Bayan, based on the book Zubeen Garg: The Voice of the People.")
