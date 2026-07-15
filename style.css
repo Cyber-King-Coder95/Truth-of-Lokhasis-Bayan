@@ -1,0 +1,371 @@
+:root{
+    color-scheme: light;
+}
+
+html{
+    background: rgb(105,59,59);
+}
+
+body{
+    background: rgb(105,59,59);
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,p,li,span{
+    color:white;
+}
+
+a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#39b53d;
+
+    color:white;
+
+    padding:14px 25px;
+
+    border-radius:8px;
+
+    margin-right:15px;
+
+    margin-bottom:30px;
+
+    transition:.3s;
+
+}
+
+/* ===========================
+   MODERN NAVIGATION BAR
+=========================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    background:rgba(20,20,20,.95);
+    backdrop-filter:blur(10px);
+
+    padding:15px 0;
+
+    z-index:1000;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.logo{
+    color:white;
+    font-size:34px;
+    font-weight:bold;
+
+    margin-bottom:15px;
+}
+
+.nav-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:25px;
+
+    list-style:none;
+
+    padding:0;
+    margin:0;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    background:none;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    background:#ff4b2b;
+}
+
+/*==========================
+        HERO SECTION
+==========================*/
+
+.hero{
+
+    height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 30px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("zubeen.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    color:#eeeeee;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    background:#ff4b2b;
+
+    color:white;
+
+    padding:16px 38px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.4s;
+
+}
+
+.hero-btn:hover{
+
+    background:#ff784e;
+
+    transform:translateY(-5px);
+
+}
+
+/*==========================
+      GLASS CARD DESIGN
+==========================*/
+
+@media (max-width:768px){
+
+.cards{
+    flex-direction:column;
+}
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.45);
+
+}
+
+h2{
+
+    color:#ffd369;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    line-height:1.9;
+
+    font-size:20px;
+
+    font-weight:400;
+
+}
+
+img{
+
+    border-radius:18px;
+
+    transition:.5s;
+
+}
+
+img:hover{
+
+    transform:scale(1.04);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+}
+
+img{
+    width:100%;
+    display: block;
+    max-width: 320px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media (max-width: 768px){
+
+    body{
+        font-size:16px;
+    }
+
+    .container{
+        width:95%;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    p{
+        font-size:16px;
+    }
+}
+
+button{
+    width:100%;
+    max-width:300px;
+}
+
+/* ===========================
+      MOBILE VERSION
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 15px 10px;
+
+        background: rgba(20,20,20,.95);
+
+        z-index: 1000;
+    }
+
+    .logo{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        list-style: none;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li{
+        list-style: none;
+    }
+
+    .nav-links a{
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    .hero{
+        height: auto;
+        padding: 150px 20px 60px;
+    }
+
+    .hero h1{
+        font-size: 34px;
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+    .container{
+        width:95%;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
+}
